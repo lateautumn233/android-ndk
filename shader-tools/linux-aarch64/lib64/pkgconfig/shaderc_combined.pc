@@ -1,0 +1,12 @@
+prefix=/root/llvm-toolchain/toolchain/prebuilts/ndk/android-ndk-r23/shader-tools
+exec_prefix=${prefix}
+libdir=${prefix}/lib64
+includedir=${prefix}/include
+
+Name: shaderc
+Description: Tools and libraries for Vulkan shader compilation
+Version: 2021.4.0
+URL: https://github.com/google/shaderc
+
+Libs: -L${libdir} -lshaderc_combined
+Cflags: -I${includedir}
